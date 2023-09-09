@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+  <title>pizza-shark</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="description">
+        <img src="./images/shark 1.png" alt="" id="logo" width="110px" height="100px">
+        <h1>PIZZA-SHARK. <br> one bite and you're hooked.</h1>
+        <p>Welcome to pizza-shark where you get the most delicious pizza's at an affordable price and delivered right at
+          your doorstep.</p>
+
+      </div>
+      <div class="menu">
+        <form id="pizzaMenu">
+          <h2>Pizza Menu</h2>
+          <P>you can choose the type of pizza you want from the menu below:</P>
+          <div class="size">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Pizza Size</label>
+              </div>
+              <select class="custom-select" id="size">
+                <option value="">choose size...</option>
+                <option value="1">Small @500/=</option>
+                <option value="2">Medium @750/=</option>
+                <option value="3">Large @1000/=</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Crust Type</label>
+            </div>
+            <select class="custom-select" id="crust">
+              <option value="">Choose crust...</option>
+              <option value="1">Thin @150/=</option>
+              <option value="2">Medium @250/=</option>
+              <option value="3">Thick @300/=</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Extra Topping</label>
+            </div>
+            <select class="custom-select" id="topping">
+              <option value="">Choose topping...</option>
+              <option value="1">pepperoni @70/=</option>
+              <option value="2">beef @70/=</option>
+              <option value="3">sausage @60/=</option>
+              <option value="4">chicken @60/=</option>
+              <option value="5">bacon @60/=</option>
+            </select>
+          </div>
+          <div class="form-group row align-items-center">
+            <input type="number" class="form-control" id="number" placeholder="number of pizza you want to order..."
+              min="1" required>
+          </div>
+          <br>
+          <div class="button">
+            <button type="submit" class="btn btn-primary" id="place"><b>PLACE YOUR ORDER</b></button>
+          </div>
+      </div>
+      </form>
+      <br>
+      <div class="summary">
+        <h2>Summary Of Your Order</h2>
+        <br>
+
+        <table class="table table-sm table-dark" id="myTable">
+          <thead>
+            <tr>
+              <th scope="col">size</th>
+              <th scope="col">Crust</th>
+              <th scope="col">Topping</th>
+              <th scope="col">Number of pizza</th>
+              <th scope="col">Total</th>
+
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <br>
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+
+            <p><b>TOTAL AMOUNT TO BE CHARGED = <span id="all"></span></b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="location">
+        <h2>DELIVARY</h2>
+        <div class="row">
+          <div class="col">
+            <label for="">Name</label>
+            <input type="text" class="form-control" placeholder="input name.." id="names">
+          </div>
+          <div class="col">
+            <label for="">Location</label>
+            <input type="text" class="form-control" placeholder="input location..." id="place1">
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success" onclick="deliver()">DELIVERY</button>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="contacts">
+        <footer>
+          <h2>Contacts</h2>
+          <p>To place your order you can call the numbers below or text us on our social media pages and we'll reply as
+            soon as possible and get ypur pizza delivered to you.</p>
+          <p>Telephone number:<br> +254729429104 <br>
+            +254722566585</p>
+          <div class="icons">
+            <a href=""><img src="./images/twitter.png" alt=""></a>
+            <a href=""><img src="./images/facebook.png" alt=""></a>
+            <a href=""><img src="./images/pinterest.png" alt=""></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
